@@ -12,7 +12,7 @@ char companyName[] = "Arduino-er";
 // Make up anything you want for these
 char versionNumber[] = "0.1";
 char serialNumber[] = "1";
-char url[] = "https://sites.google.com/site/arduinosite/exercise/androidadkanalogled/AndroidADKAnalogLED_0.1.apk";
+char url[] = "https://sites.google.com/site/alisonengineer/AndroidADK_0.1.apk?attredirects=0&d=1";
 
 USBHost Usb;
 ADK adk(&Usb, companyName, applicationName, accessoryName, versionNumber, url, serialNumber);
@@ -75,6 +75,8 @@ void loop() {
       analogWrite(led, ledBrightness);
     }
 
+  }else{
+      analogWrite(led, 0);
   }
 
 }
